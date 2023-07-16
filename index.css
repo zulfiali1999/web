@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Nunito:ital,wght@0,300;1,200&family=Poppins:wght@200;400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    background-image: url(DSC_0232.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.First-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.logo {
+
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.logo h1 span {
+    color: gold;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 10rem;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 0 30px;
+    color: white;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: gold;
+    transition: .2s;
+}
+
+.discription {
+    color: gold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    margin: 3rem;
+    position: relative;
+    left: 8rem;
+    z-index: 1;
+    width: auto;
+}
+
+.discription h1 {
+    font-size: 80px;
+    width: auto;
+}
+
+.discription p {
+    font-size: 15px;
+    color: white;
+}
+
+.discription img {
+    z-index: -1;
+    background-color: aliceblue;
+
+}
+
+.section-me {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(12, 11, 11, 0.596);
+
+}
+
+.about-me {
+    margin: 5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.about-me h1 {
+    font-size: 3rem;
+    color: gold;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+.about-me p {
+    color: white;
+    font-size: 1rem;
+}
+
+/* other css */
+
+#showcase {
+    background-color: rgb(0, 0, 0);
+}
+
+.showcase-logo {
+    font-size: 3rem;
+    color: gold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.showcase {
+    margin: auto;
+    width: 70%;
+    display: block;
+}
+
+.showcase img {
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(12, 11, 11, 0.596);
+
+}
+
+.contact-left { 
+    color: yellow;
+    margin: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.contact-right{
+    margin: auto; 
+}
+form input, form textarea{
+    width: 100%;
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
+    padding: 15px;
+    color: yellow;
+    border-radius: 6px;
+}
+.contact-right button{
+    color: black;
+    font-size: 15px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    background-color: yellow;
+}
