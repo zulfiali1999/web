@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,21 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
+
 <body>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <header id="home">
         <nav class="logo">
             <h1>Manzoor_ali<span>_Portfolio</span></h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#showcase">Showcase</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <!-- <button class="btn"><a href="">Donate</a></button> -->
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <!-- <button class="btn"><a href="">Donate</a></button> -->
         </nav>
     </header>
     <main>
@@ -29,7 +33,7 @@
                     <span id="element"></span>
                 </h1>
                 <p>Being a photographer is always my first choice.</p>
-                
+
             </div>
         </section>
         <hr>
@@ -37,71 +41,85 @@
             <section class="section-me">
                 <div class="about-me">
                     <h1>About Me</h1>
-                    <p>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and
+                    <p>I am a person who is positive about every aspect of life. There are many things I like to do, to
+                        see, and
                         to experience.
-                        I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen.
+                        I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to
+                        listen.
                     </p>
                 </div>
             </section>
         </div>
         <hr>
-    </div>
-    
-    <!-- other -->
-    <div id="showcase">
-        <section class="showcase-logo">
-            <h1>SHOWCASE</h1>
-            <div class="showcase">
-                <div>
-                <img src="cart.JPG" alt="">
-                <hr>
+        </div>
+
+        <!-- other -->
+        <div id="showcase">
+            <section class="showcase-logo">
+                <h1>SHOWCASE</h1>
+                <div class="showcase">
+                    <div>
+                        <img src="cart.JPG" alt="">
+                        <hr>
+                    </div>
+                    <img src="cart.JPG" alt="">
+                    <hr>
+                    <img src="cart.JPG" alt="">
+                    <hr>
+                    <img src="cart.JPG" alt="">
+                    <hr>
                 </div>
-            <img src="cart.JPG" alt="">
-            <hr>
-            <img src="cart.JPG" alt="">
-            <hr>
-            <img src="cart.JPG" alt="">
-            <hr>
-            </div>
         </div>
         </section>
-    <div id="contact">
-        <div class="container">
-           <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-inbox"></i>contact@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>0342-2222222</p>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-inbox"></i>contact@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0342-2222222</p>
                         <div class="social-icons">
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
                             <a href=""><i class="fa-brands fa-youtube"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                         </div>
+                    </div>
                 </div>
-           </div>
-        <div class="contact-right">
-            <form class="">
-                <input type="text" placeholder="Your name" class="search">
-                <input type="email" placeholder="Your Email" class="search">
-                <textarea name="message" rows="6" placeholder="your message" class="search"></textarea>
-                <button>submit</button>
-            </form>
+                <div class="contact-right">
+                    <form class="">
+                        <input type="text" placeholder="Your name" class="search">
+                        <input type="email" placeholder="Your Email" class="search">
+                        <textarea name="message" rows="6" placeholder="your message" class="search"></textarea>
+                        <button>submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-</main>
+    </main>
 
 
 
 
-<!-- Javascript -->
+    <!-- Javascript -->
 
-<script>
-            var typed = new Typed('#element', {
-                strings: [' A photographer.', ' videographer.','graphic designer.'],
-                typeSpeed: 50,
-            });
-            </script>
+    <!-- <script>
+        var typed = new Typed('#element', {
+            strings: [' A photographer.', ' videographer.', 'graphic designer.'],
+            typeSpeed: 50,
+        }); -->
+
+        <script>
+        var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            };
+            function closemenu() {
+                sidemenu.style.right = "-20rem";
+            };
+    </script>
+        
+    
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </body>
+
 </html>

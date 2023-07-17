@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.50%;
 }
 
 body {
@@ -39,6 +40,7 @@ body {
 
 .logo h1 {
     color: white;
+    font-size: 2rem;
 }
 
 .logo h1 span {
@@ -57,6 +59,7 @@ ul li a {
     padding: 0 30px;
     color: white;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 ul li a:hover {
@@ -70,20 +73,17 @@ ul li a:hover {
     justify-content: center;
     text-align: center;
     padding: 30px;
-    margin: 3rem;
-    position: relative;
-    left: 8rem;
-    z-index: 1;
+    margin: auto;
     width: auto;
 }
 
 .discription h1 {
-    font-size: 80px;
+    font-size: 7rem;
     width: auto;
 }
 
 .discription p {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -98,10 +98,11 @@ ul li a:hover {
     justify-content: center;
     background-color: rgba(12, 11, 11, 0.596);
 
+
 }
 
 .about-me {
-    margin: 5rem;
+    margin: 5.5rem;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -109,17 +110,17 @@ ul li a:hover {
 }
 
 .about-me h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     color: gold;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -10px;
+    top: -1rem;
 }
 
 .about-me p {
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 /* other css */
@@ -149,27 +150,45 @@ ul li a:hover {
 
 .container {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: rgba(12, 11, 11, 0.596);
-
-}
-
-.contact-left { 
-    color: yellow;
-    margin: 5rem;
-    font-size: 2rem;
-    text-align: center;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
-
+    background-color: rgba(12, 11, 11, 0.596);
+    max-width: 100%;
 }
 
-.contact-right{
-    margin: auto; 
+.contact-left {
+    color: yellow;
+    font-size: 3rem;
+    text-align: center;
 }
-form input, form textarea{
+
+.subtitle {
+    color: yellow;
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+.contact-left p {
+    color: white;
+}
+
+.contact-left p i {
+    color: rgb(248, 5, 5);
+}
+
+.social-icons {
+    color: rgb(248, 6, 6);
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.contact-right {
+    margin: 3rem;
+    width: 100;
+}
+
+form input,
+form textarea {
     width: 100%;
     border: 1px solid white;
     outline: none;
@@ -178,10 +197,50 @@ form input, form textarea{
     color: yellow;
     border-radius: 6px;
 }
-.contact-right button{
+
+.contact-right button {
     color: black;
     font-size: 15px;
     border: 1px solid yellow;
     border-radius: 10px;
     background-color: yellow;
+}
+
+.logo .fas {
+    display: none;
+}
+
+
+@media(max-width: 820px) {
+    .logo .fas {
+        display: block;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .logo ul {
+        background-color: #ff004f;
+        position: fixed;
+        display: block;
+        top: 0;
+        right: -20rem;
+        width: 20rem;
+        height: 100vh;
+        padding-top: 5rem;
+        font-size: 7rem;
+
+    }
+
+    .logo ul li {
+        margin: 2.5rem;
+        display: block;
+
+    }
+
+    .logo ul .fas {
+        position: absolute;
+        top: 2.5rem;
+        left: 2.5rem;
+        cursor: pointer;
+    }
 }
